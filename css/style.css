@@ -1,3 +1,4 @@
+/* Базовые стили */
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +25,7 @@ section {
 
 h1, h2, h3, h4 {
     margin-bottom: 20px;
+    color: #292929;
 }
 
 h2 {
@@ -38,18 +40,19 @@ h2:after {
     display: block;
     width: 60px;
     height: 4px;
-    background: #4A90E2;
+    background: #8A2BE2;
     margin: 15px auto 0;
     border-radius: 2px;
 }
 
 p {
     margin-bottom: 15px;
+    color: #555;
 }
 
 .btn {
     display: inline-block;
-    background: #4A90E2;
+    background: #8A2BE2;
     color: white;
     padding: 12px 30px;
     border-radius: 8px;
@@ -61,9 +64,9 @@ p {
 }
 
 .btn:hover {
-    background: #3a7bc8;
+    background: #7B1FA2;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
 }
 
 .section-header {
@@ -79,7 +82,7 @@ p {
 
 /* Стили для шапки */
 header {
-    background: #292929;
+    background: #4B0082;
     color: white;
     position: fixed;
     width: 100%;
@@ -92,18 +95,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px;
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: white;
+    display: flex;
+    align-items: center;
     text-decoration: none;
 }
 
-.logo span {
-    color: #4A90E2;
+.logo-img {
+    height: 50px; /* Высота логотипа */
+    width: auto;
+}
+
+.footer-logo-img {
+    height: 40px; /* Меньше в футере */
+    width: auto;
 }
 
 nav ul {
@@ -123,7 +131,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #4A90E2;
+    color: #FFD700;
 }
 
 .menu-toggle {
@@ -134,7 +142,7 @@ nav a:hover {
 
 /* Герой-секция */
 .hero {
-    background: linear-gradient(0turn, rgba(30,28,33,1) 0%, rgba(170,98,255,1) 100%);
+    background: linear-gradient(135deg, #4B0082 0%, #8A2BE2 100%);
     color: white;
     padding-top: 150px;
     padding-bottom: 100px;
@@ -156,139 +164,189 @@ nav a:hover {
 
 /* О компании */
 .about {
-    background: linear-gradient(0turn, rgba(41,29,55,1) 0%, rgba(170,98,255,1) 100%);
-    color: white;
-}
-
-.about h2 {
-    color: white;
-}
-
-.about h2:after {
     background: white;
+    color: #333;
 }
 
-.about p {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.about-content {
+.stats {
     display: flex;
-    align-items: center;
-    gap: 50px;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
-.about-text {
-    flex: 1;
-}
-
-.about-images {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
-.about-img {
-    width: 100%;
-    height: 200px;
+.stat-item {
+    text-align: center;
+    background: linear-gradient(135deg, #8A2BE2, #4B0082);
+    padding: 30px;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2);
 }
 
-.about-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s;
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
 }
 
-.about-img:hover img {
-    transform: scale(1.05);
+.stat-item p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
 }
 
-/* Услуги */
+/* Услуги - стиль как в макете */
 .services {
-    background: white;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .service-card {
     background: white;
     border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
-    border-top: 4px solid #4A90E2;
+    text-align: center;
+    border-top: 4px solid #8A2BE2;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(138, 43, 226, 0.15);
 }
 
 .service-card h3 {
     margin-bottom: 15px;
-    color: #292929;
+    color: #4B0082;
+    font-size: 1.3rem;
 }
 
-.service-card i {
-    font-size: 2.5rem;
-    color: #4A90E2;
-    margin-bottom: 20px;
+.service-card p {
+    color: #666;
+    font-size: 0.95rem;
 }
-
-/* Преимущества */
-.advantages {
-    background: linear-gradient(0turn, rgba(30,28,33,1) 0%, rgba(170,98,255,1) 100%);
+/* Почему выбирают нас */
+.why-choose {
+    background: linear-gradient(135deg, #4B0082 0%, #8A2BE2 100%);
     color: white;
 }
 
-.advantages h2 {
+.why-choose h2 {
     color: white;
 }
 
-.advantages h2:after {
-    background: white;
+.why-choose h2:after {
+    background: #FFD700;
 }
 
-.advantages-grid {
+.why-choose .section-header p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.reasons-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    margin-top: 30px;
 }
 
-.advantage-card {
+.reason-card {
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 10px;
-    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s, background 0.3s;
 }
 
-.advantage-card:hover {
+.reason-card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.2);
 }
 
-.advantage-card i {
+.reason-icon {
     font-size: 2.5rem;
-    color: #4A90E2;
+    color: #FFD700;
     margin-bottom: 20px;
 }
 
-.advantage-card h3 {
+.reason-card h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.reason-card p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+/* Адаптивность для секции Почему выбирают нас */
+@media (max-width: 768px) {
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reason-card {
+        padding: 25px;
+    }
+}
+/* Кому помогаем */
+.clients {
+    background: linear-gradient(135deg, #8A2BE2 0%, #4B0082 100%);
+    color: white;
+}
+
+.clients h2 {
+    color: white;
+}
+
+.clients h2:after {
+    background: #FFD700;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.client-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.client-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.client-card i {
+    font-size: 3rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.client-card h3 {
     color: white;
     margin-bottom: 15px;
 }
 
-.advantage-card p {
+.client-card p {
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -297,84 +355,42 @@ nav a:hover {
     background: white;
 }
 
-.reviews-slider {
-    position: relative;
-    overflow: hidden;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.reviews-container {
-    display: flex;
-    transition: transform 0.5s ease;
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .review-card {
-    min-width: 100%;
-    background: white;
+    background: #f9f9f9;
     border-radius: 10px;
-    padding: 40px;
+    padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    text-align: center;
-}
-
-.review-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 20px;
-    border: 4px solid #4A90E2;
-}
-
-.review-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-left: 5px solid #8A2BE2;
 }
 
 .review-text {
     font-style: italic;
     margin-bottom: 20px;
     font-size: 1.1rem;
+    color: #555;
 }
 
 .review-author {
     font-weight: 600;
-    color: #292929;
+    color: #4B0082;
     margin-bottom: 5px;
 }
 
 .review-position {
-    color: #4A90E2;
+    color: #8A2BE2;
     font-size: 0.9rem;
 }
 
-.slider-controls {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 10px;
-}
-
-.slider-btn {
-    background: #e0e0e0;
-    border: none;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.slider-btn.active {
-    background: #4A90E2;
-}
-
-
 /* Контакты */
 .contact {
-    background: #292929;
+    background: linear-gradient(135deg, #4B0082 0%, #8A2BE2 100%);
     color: white;
 }
 
@@ -383,12 +399,13 @@ nav a:hover {
 }
 
 .contact h2:after {
-    background: white;
+    background: #FFD700;
 }
 
 .contact-container {
     display: flex;
     gap: 50px;
+    align-items: flex-start;
 }
 
 .contact-info {
@@ -402,14 +419,28 @@ nav a:hover {
 .contact-detail {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
 }
 
 .contact-detail i {
-    font-size: 1.2rem;
-    color: #4A90E2;
-    margin-right: 15px;
-    width: 30px;
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-right: 20px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.contact-detail p {
+    color: white;
+    margin: 0;
+}
+
+.contact-detail strong {
+    color: #FFD700;
 }
 
 .social-links {
@@ -422,17 +453,20 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     color: white;
     text-decoration: none;
+    font-size: 1.3rem;
     transition: background 0.3s, transform 0.3s;
+    backdrop-filter: blur(10px);
 }
 
 .social-link:hover {
-    background: #4A90E2;
+    background: #FFD700;
+    color: #4B0082;
     transform: translateY(-5px);
 }
 
@@ -440,7 +474,8 @@ nav a:hover {
     flex: 1;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    height: 400px;
 }
 
 .contact-map iframe {
@@ -451,7 +486,7 @@ nav a:hover {
 
 /* Футер */
 footer {
-    background: #1a1a1a;
+    background: #292929;
     color: white;
     padding: 40px 0 20px;
 }
@@ -466,14 +501,13 @@ footer {
 }
 
 .footer-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: white;
+    display: flex;
+    align-items: center;
     text-decoration: none;
 }
 
-.footer-logo span {
-    color: #4A90E2;
+.footer-info {
+    text-align: right;
 }
 
 .copyright {
@@ -486,8 +520,12 @@ footer {
 
 /* Адаптивность */
 @media (max-width: 992px) {
-    .about-content {
-        flex-direction: column;
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
     }
 
     .contact-container {
@@ -496,6 +534,11 @@ footer {
 
     .contact-map {
         height: 300px;
+        width: 100%;
+    }
+
+    .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -514,9 +557,10 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: #292929;
+        background: #4B0082;
         flex-direction: column;
         padding: 20px;
+        z-index: 1000;
     }
 
     nav ul.active {
@@ -528,11 +572,35 @@ footer {
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
+        position: absolute;
+        right: 24px;
     }
 
-    .about-images {
+    .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .clients-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+
+    .footer-logo-img {
+        height: 30px;
     }
 }
 
@@ -545,7 +613,13 @@ footer {
         padding-top: 130px;
     }
 
-    .services-grid {
-        grid-template-columns: 1fr;
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-info {
+        text-align: center;
     }
 }
