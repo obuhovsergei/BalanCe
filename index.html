@@ -3,170 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>BalanCe — бухгалтерские услуги и сопровождение бизнеса</title>
-
-    <!-- SEO -->
-    <meta name="description" content="BalanCe — профессиональные бухгалтерские услуги для ИП и ООО. Ведение бухгалтерии, налоговый и кадровый учет, отчетность. Надежность, точность, ответственность.">
-    <meta name="keywords" content="бухгалтерские услуги, бухгалтерия для ИП, бухгалтерия для ООО, аутсорсинг бухгалтерии, налоговый учет, бухгалтерское сопровождение бизнеса">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="BalanCe — бухгалтерские услуги и сопровождение бизнеса">
-    <meta property="og:description" content="Профессиональное бухгалтерское сопровождение бизнеса. Надежность, прозрачность и контроль.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/hero.jpg">
-    <meta property="og:url" content="https://balance.ru">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <title>BalanCe — надёжный партнёр в бухгалтерском сопровождении бизнеса</title>
+    <meta name="description" content="Комплексное ведение бухгалтерии для ИП и ООО. Профессионализм и ответственность в каждом решении.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<header class="header">
-    <div class="container header__inner">
-        <div class="logo">
-            <img src="images/logo.svg" alt="BalanCe">
-            <span>BalanCe</span>
+<!-- Шапка сайта -->
+<header>
+    <div class="container header-container">
+        <a href="#" class="logo">Balan<span>Ce</span></a>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
         </div>
-
-        <nav class="nav" id="nav">
-            <a href="#about">О компании</a>
-            <a href="#services">Услуги</a>
-            <a href="#clients">Клиенты</a>
-            <a href="#reviews">Отзывы</a>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
         </nav>
-
-        <div class="burger" id="burger">
-            <span></span><span></span><span></span>
-        </div>
     </div>
 </header>
 
+<!-- Герой-секция -->
 <section class="hero">
-    <div class="container hero__content">
-        <h1>BalanCe — надёжный партнёр<br>в бухгалтерском сопровождении бизнеса</h1>
-        <p>
-            Комплексное ведение бухгалтерии для ИП и ООО.<br>
-            Точность, ответственность и уверенность в каждом решении.
-        </p>
+    <div class="container">
+        <h1>Аутсорсинг бухгалтерских услуг для бизнеса</h1>
+        <p>Мы предлагаем профессиональные бухгалтерские услуги, чтобы ваш бизнес мог сосредоточиться на развитии. Как в жизни так и в бизнесе баланс необходим. БК "BalanCe" - ваш бухгалтерский партнер на всем пути вашего бизнеса. БК "BalanCe" - все виды бухгалтерских услуг!</p>
     </div>
 </section>
 
-<section id="about" class="section light">
+<!-- О компании -->
+<section class="about" id="about">
     <div class="container">
-        <h2>О компании</h2>
-
-        <div class="about">
-            <p>
-                <strong>БК «BalanCe»</strong> — команда профессиональных бухгалтеров с многолетним опытом
-                сопровождения бизнеса в различных сферах.
-            </p>
-            <p>
-                Мы выстраиваем системный бухгалтерский и налоговый учет,
-                обеспечиваем корректную отчетность и контроль сроков,
-                снижая риски и административную нагрузку для бизнеса.
-            </p>
+        <div class="section-header">
+            <h2>О компании</h2>
+            <p>Наша бухгалтерская контора специализируется на аутсорсинге бухгалтерских услуг. Мы стремимся обеспечить высокий уровень профессионализма и индивидуальный подход к каждому клиенту.</p>
         </div>
-
-        <div class="stats">
-            <div class="stat">
-                <strong>15 лет</strong>
-                <span>опыта в бухгалтерии</span>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Наша миссия — помогать бизнесу эффективно управлять финансами. Мы ценим надёжность, точность и оперативность в работе.</p>
+                <p>Наша команда опытных бухгалтеров работает с ИП и ООО, обеспечивая точный бухгалтерский учет, своевременную отчетность и налоговый контроль.</p>
+                <div style="margin-top: 30px; display: flex; gap: 30px;">
+                    <div>
+                        <h3 style="color: white; font-size: 2rem;">15+</h3>
+                        <p>лет опыта в сфере бухгалтерии</p>
+                    </div>
+                    <div>
+                        <h3 style="color: white; font-size: 2rem;">500+</h3>
+                        <p>клиентов на сопровождении</p>
+                    </div>
+                    <div>
+                        <h3 style="color: white; font-size: 2rem;">1000+</h3>
+                        <p>отчетов сдано без штрафов</p>
+                    </div>
+                </div>
             </div>
-            <div class="stat">
-                <strong>500+</strong>
-                <span>клиентов на сопровождении</span>
-            </div>
-            <div class="stat">
-                <strong>1000+</strong>
-                <span>отчетов ежегодно</span>
+            <div class="about-images">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Бухгалтерия">
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Финансы">
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Документы">
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Команда">
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="services" class="section">
+<!-- Услуги -->
+<section class="services" id="services">
     <div class="container">
-        <h2>Услуги</h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>Бухгалтерское сопровождение</h3>
-                <p>Полное ведение бухгалтерского учета, контроль операций и отчетности.</p>
+        <div class="section-header">
+            <h2>Наши услуги</h2>
+            <p>Предлагаем полный спектр бухгалтерских услуг: учёт, налоговое консультирование, отчётность, анализ и др.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-calculator"></i>
+                <h3>Ведение бухгалтерского учёта</h3>
+                <p>Полное ведение бухгалтерского учёта в соответствии с действующим законодательством.</p>
             </div>
-
-            <div class="card">
+            <div class="service-card">
+                <i class="fas fa-chart-pie"></i>
                 <h3>Налоговый учет и отчетность</h3>
-                <p>Расчет налогов, подготовка и своевременная сдача отчетов.</p>
+                <p>Консультации по вопросам налогообложения, оптимизация налоговых платежей.</p>
             </div>
-
-            <div class="card">
+            <div class="service-card">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <h3>Подготовка отчётности</h3>
+                <p>Подготовка и сдача отчётности в налоговые органы, социальный фонд и другие контролирующие органы.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-users"></i>
                 <h3>Кадровый учет</h3>
-                <p>Оформление сотрудников, расчет заработной платы, кадровые документы.</p>
+                <p>Расчёт заработной платы, начисление налогов и взносов, подготовка кадровой отчётности.</p>
             </div>
-
-            <div class="card">
-                <h3>Восстановление учета</h3>
-                <p>Приведение бухгалтерии в порядок и устранение ошибок.</p>
+            <div class="service-card">
+                <i class="fas fa-redo"></i>
+                <h3>Восстановление учёта</h3>
+                <p>Помощь в восстановлении бухгалтерского учёта при наличии проблем или ошибок.</p>
             </div>
-        </div>
-    </div>
-</section>
-
-<section id="clients" class="section light">
-    <div class="container">
-        <h2>Кому мы помогаем</h2>
-
-        <div class="clients">
-            <div class="client">
-                <img src="images/business-1.jpg" alt="">
-                <span>Малый бизнес</span>
-            </div>
-            <div class="client">
-                <img src="images/business-2.jpg" alt="">
-                <span>Средний бизнес</span>
-            </div>
-            <div class="client">
-                <img src="images/business-3.jpg" alt="">
-                <span>IT и сервисные компании</span>
+            <div class="service-card">
+                <i class="fas fa-search"></i>
+                <h3>Сопровождение налоговых проверок</h3>
+                <p>Представление интересов клиента при налоговых проверках, консультации по результатам проверок.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="reviews" class="section">
+<!-- Преимущества -->
+<section class="advantages" id="advantages">
     <div class="container">
-        <h2>Отзывы клиентов</h2>
-
-        <div class="reviews">
-            <div class="review">
-                <p>
-                    «Работаем с BalanCe много лет. Учёт выстроен грамотно,
-                    отчётность всегда сдаётся вовремя.»
-                </p>
-                <span>ИП, сфера услуг</span>
+        <div class="section-header">
+            <h2>Почему выбирают нас</h2>
+            <p>Профессионализм, опыт, индивидуальный подход и высокое качество услуг — вот почему стоит выбрать нашу компанию для аутсорсинга бухгалтерских услуг.</p>
+        </div>
+        <div class="advantages-grid">
+            <div class="advantage-card">
+                <i class="fas fa-user-tie"></i>
+                <h3>Профессионализм</h3>
+                <p>Наши специалисты обладают глубокими знаниями и опытом в области бухгалтерии. Стаж работы в бухгалтерской службе более 35 лет.</p>
             </div>
-
-            <div class="review">
-                <p>
-                    «Передали бухгалтерию полностью.
-                    Стало значительно спокойнее и прозрачнее.»
-                </p>
-                <span>ООО, торговая компания</span>
+            <div class="advantage-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Индивидуальный подход</h3>
+                <p>Мы учитываем особенности вашего бизнеса и подбираем оптимальные решения.</p>
+            </div>
+            <div class="advantage-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Ответственность</h3>
+                <p>Мы гарантируем точность и своевременность выполнения всех бухгалтерских операций.</p>
+            </div>
+            <div class="advantage-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Экономия времени</h3>
+                <p>Передав бухгалтерию нам, вы сможете сосредоточиться на развитии своего бизнеса.</p>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="footer">
+<!-- Отзывы -->
+<section class="reviews" id="reviews">
     <div class="container">
-        © BalanCe, 2025 · Бухгалтерские услуги
+        <div class="section-header">
+            <h2>Отзывы наших клиентов</h2>
+        </div>
+        <div class="reviews-slider">
+            <div class="reviews-container" id="reviewsContainer">
+                <div class="review-card">
+                    <div class="review-img">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Мария Васильева">
+                    </div>
+                    <p class="review-text">"Бухгалтерская контора 'BalanCe' помогла нам оптимизировать налоговые выплаты. Теперь мы экономим больше денег. Спасибо за отличную работу!"</p>
+                    <p class="review-author">Мария Васильева</p>
+                    <p class="review-position">Оптимизация налоговых выплат</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-img">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Иван Петров">
+                    </div>
+                    <p class="review-text">"Обратился в бухгалтерскую контору 'BalanCe' для ведения бухгалтерского учёта. Очень доволен профессионализмом сотрудников. Всё чётко и грамотно."</p>
+                    <p class="review-author">Иван Петров</p>
+                    <p class="review-position">Ведение бухгалтерского учёта</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-img">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Анна Смирнова">
+                    </div>
+                    <p class="review-text">"Отличная работа! Быстро и качественно подготовили налоговую декларацию. Всё сделали вовремя."</p>
+                    <p class="review-author">Анна Смирнова</p>
+                    <p class="review-position">Подготовка налоговой декларации</p>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn active" data-slide="0"></button>
+                <button class="slider-btn" data-slide="1"></button>
+                <button class="slider-btn" data-slide="2"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Контакты</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Свяжитесь с нами</h3>
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Адрес:</strong> г. Можайск, ул. Приморская, д. 13, офис 34</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p><strong>Телефон:</strong> +7 (909) 369-28-28</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p><strong>Email:</strong> info@balancc.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <p><strong>Режим работы:</strong> Пн-Пт: 9:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Футер -->
+<footer>
+    <div class="container">
+        <div class="footer-container">
+            <a href="#" class="footer-logo">Balan<span>Ce</span></a>
+            <div>
+                <p>Комплексное ведение бухгалтерии для ИП и ООО</p>
+                <p>Профессионализм и ответственность в каждом решении</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 БК "BalanCe". Все права защищены.</p>
+        </div>
     </div>
 </footer>
 
-<script src="js/script.js"></script>
-</body>
-</html>
+<script>
+    // Мобильное меню
+    document.getElementById('menuToggle').addEventListener('click', function() {
+        document.getElementById('navMenu').classList.toggle('active');
+    });
+
+    // Плавная прокрутка для якорных ссылок
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                // Закрываем мобильное меню если открыто
+                document.getElementById('navMenu').classList.remove('active');
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Слайдер отзывов
+    const reviewsContainer = document.getElementById('reviewsContainer');
+    const sliderButtons = document.querySelectorAll('.slider-btn');
+    let currentSlide = 0;
+    const totalSlides = 3;
+
+    function updateSlider() {
+        reviewsContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        sliderButtons.forEach((btn, index) => {
+            if (index === currentSlide) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+    }
+
+    sliderButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            currentSlide = parseInt(this.getAttribute('data-slide'));
+            updateSlider();
+        });
+    });
+
+</script>

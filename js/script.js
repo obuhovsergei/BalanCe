@@ -1,7 +1,7 @@
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');
 
-burger.addEventListener('click', () => {
+burger?.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
 
@@ -10,6 +10,5 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         e.preventDefault();
         document.querySelector(link.getAttribute('href'))
             .scrollIntoView({ behavior: 'smooth' });
-        nav.classList.remove('active');
     });
 });
