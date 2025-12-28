@@ -197,6 +197,10 @@ nav a:hover {
     color: #f39c3d;
     margin-bottom: 15px;
 }
+
+.service-card h3 {
+    margin-bottom: 12px;
+}
 #services .container h2 {
     color: white;
 }
