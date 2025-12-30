@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://balance-yola.ru/sitemap.xml
